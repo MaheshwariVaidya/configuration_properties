@@ -22,7 +22,7 @@ spring:
                 - Path=/api/user/**
 
             - id: order-api
-              uri: lb://orders-api
+              uri: lb://order-api
               predicates:
                 - Path=/api/order/**
 
