@@ -1,0 +1,42 @@
+server:
+  port: 7074
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ashokit_ecomm
+    username: root
+    password: Maheshwari#123
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  boot:
+    admin:
+      client:
+        url: http://localhost:1111/
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: mahivaidy@gmail.com
+    password: wqnj gclc gtai fath
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+razorpay:
+  key:
+    id: rzp_test_T89FBUpGjjuOYa
+    secret: 2npH3MdRHXaJHcThy9vEmIxy
